@@ -79,7 +79,7 @@ namespace BeautyForestAgent
             FormModify();
         }
 
-        private void FormAdd()
+        private void FormModify()
         {
             this.statusMessage.Text = "모달 창을 띄웁니다.";
             FormModify m = new FormModify();
@@ -92,7 +92,7 @@ namespace BeautyForestAgent
             FormAdd();
         }
 
-        private void FormModify()
+        private void FormAdd()
         {
             this.statusMessage.Text = "모달 창을 띄웁니다.";
             FormAdd m = new FormAdd();
