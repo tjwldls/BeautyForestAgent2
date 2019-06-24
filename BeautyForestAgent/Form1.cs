@@ -62,6 +62,11 @@ namespace BeautyForestAgent
         {
 
         }
+
+        private void StatusStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
     }
 
 }

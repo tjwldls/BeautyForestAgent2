@@ -39,8 +39,8 @@
             this.폼보이기ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.끝내기ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.statusTitle = new System.Windows.Forms.ToolStripStatusLabel();
+            this.statusMessage = new System.Windows.Forms.ToolStripStatusLabel();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.파일ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.끝내기ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -128,27 +128,28 @@
             // statusStrip1
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripStatusLabel1,
-            this.toolStripStatusLabel2});
+            this.statusTitle,
+            this.statusMessage});
             this.statusStrip1.Location = new System.Drawing.Point(0, 301);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(742, 22);
             this.statusStrip1.TabIndex = 5;
             this.statusStrip1.Text = "statusStrip1";
+            this.statusStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.StatusStrip1_ItemClicked);
             // 
-            // toolStripStatusLabel1
+            // statusTitle
             // 
-            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(42, 17);
-            this.toolStripStatusLabel1.Text = "상태 : ";
-            this.toolStripStatusLabel1.Click += new System.EventHandler(this.ToolStripStatusLabel1_Click);
+            this.statusTitle.Name = "statusTitle";
+            this.statusTitle.Size = new System.Drawing.Size(42, 17);
+            this.statusTitle.Text = "상태 : ";
+            this.statusTitle.Click += new System.EventHandler(this.ToolStripStatusLabel1_Click);
             // 
-            // toolStripStatusLabel2
+            // statusMessage
             // 
-            this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
-            this.toolStripStatusLabel2.Size = new System.Drawing.Size(12, 17);
-            this.toolStripStatusLabel2.Text = "-";
-            this.toolStripStatusLabel2.Click += new System.EventHandler(this.ToolStripStatusLabel2_Click);
+            this.statusMessage.Name = "statusMessage";
+            this.statusMessage.Size = new System.Drawing.Size(12, 17);
+            this.statusMessage.Text = "-";
+            this.statusMessage.Click += new System.EventHandler(this.ToolStripStatusLabel2_Click);
             // 
             // menuStrip1
             // 
@@ -267,8 +268,8 @@
         private System.Windows.Forms.ToolStripMenuItem 폼보이기ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 끝내기ToolStripMenuItem;
         private System.Windows.Forms.StatusStrip statusStrip1;
-        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
-        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
+        private System.Windows.Forms.ToolStripStatusLabel statusTitle;
+        private System.Windows.Forms.ToolStripStatusLabel statusMessage;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem 파일ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 끝내기ToolStripMenuItem1;
